@@ -336,6 +336,8 @@ function cleanForTTS(text) {
     clean = clean.replace(/N°/gi, "Número");
     clean = clean.replace(/inc\./gi, "inciso");
     clean = clean.replace(/etc\./gi, "etcétera.");
+        // Borrar emojis y caracteres raros que rompen el motor de voz en Android
+    clean = clean.replace(/[^\w\s.,;:!?¿¡áéíóúÁÉÍÓÚñÑüÜ-]/g, " ");
     return clean;
 }
 

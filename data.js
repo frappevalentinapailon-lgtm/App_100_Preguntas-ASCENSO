@@ -76,8 +76,8 @@ const window_data = [
         "a": "Proteger a la víctima de manera integral."
     },
     {
-        "q": "¿Qué caracteriza a los Cursos de Capacitac' ón dentro de los niveles de Formación Superior? 823 Los gobiernos autónomos departamentales y mun'cipales tienen atribuciones para dictar normas que garanticen accesibilidad para personas con discapacidad en diversos ámbitos. ¿Cuál de las siguientes opciones refleja correctamente uno o más de esos ámbitos?",
-        "a": "La maestra o maestro de grado, con apoyo del centro de educación especial."
+        "q": "¿Los gobiernos autónomos departamentales y municipales tienen atribuciones para dictar normas que garanticen accesibilidad para personas con discapacidad en diversos ámbitos. Cuáles son esos ámbitos?",
+        "a": "En el diseño de la infraestructura y arquitectura urbana, el transporte y los medios de comunicación."
     },
     {
         "q": "Considerando la taba de valoración del riesgo descrita en la \"Guia para la Identificación y Denuncia de la Violencia Intrafamiliar en el Ámbito Educativo\", bajo la categoria \"omisión\", ¿cuál de las siguientes opciones corresponde al nivel de riesgo BAJO?",
@@ -349,7 +349,7 @@ const window_data = [
     },
     {
         "q": "¿A partir de cuántos años de servicios, el funcionario administrativo del ramo de educación que pase a prestar funciones docentes está obligado a someterse a los exámenes para interinos y titulares a fin de mantener su categoría?",
-        "a": "Reglamento de Educación Inclusiva 📚 Material Administrativo Oficial - 📝 Simuladores de Examen - 🎧 Audios Resumidos - 🎓 Ascenso de Categoría 2026 📖 Audiolibro: 6."
+        "a": "A partir de los cinco años de servicios."
     },
     {
         "q": "De acuerdo al Escalafón Nacional del Magisterio, ¿cuántos años de servicio deben cumplir os maestros titulares para estar obligados a rendir el examen de capacidad que habilita su ncorporación definitiva en la carrera docente?",
@@ -376,8 +376,8 @@ const window_data = [
         "a": "¿Qué nivel de discapacidad tiene derecho a la renta solidaria (según normativas conexas)?"
     },
     {
-        "q": "Según el texto -Convivencia escolar y resolución pacif ca de conflictos\", el programa \"En clave de paz\" fue experimentado y evaluado en:",
-        "a": "Convivencia Escolar y Resolucion Pacifica de Conflictos 📚 Material Administrativo Oficial - 📝 Simuladores de Examen - 🎧 Audios Resumidos - 🎓 Ascenso de Categoría 2026 📖 Audiolibro: 7."
+        "q": "¿Según el texto 'Convivencia escolar y resolución pacífica de conflictos', el programa 'En clave de paz' fue experimentado y evaluado en:",
+        "a": "En 122 centros, abarcando a un total de 12.500 alumnos y 1.760 profesores."
     },
     {
         "q": "Entre los factores que facilitan el aprendizaje organizativo, a existencia y mejor aplicación de dichos facilitadores requieren de la implementación de una estrategia adecuada, apoyada en un conjunto de principios y basada en una secuencia de intervención. ¿Cuál es el orden correcto de dicha secuencia?",
