@@ -280,8 +280,8 @@ function renderQuestions(questionsToRender) {
         if (!cleanQ.endsWith('?')) cleanQ += '?';
 
         // Escapar comillas dobles y simples para evitar errores JS inline
-        const safeQ = cleanQ.replace(/"/g, '&quot;').replace(/'/g, "\'");
-        const safeA = item.a.replace(/"/g, '&quot;').replace(/'/g, "\'");
+        const safeQ = cleanQ.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        const safeA = item.a.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
         const btnClass = isLearned ? 'mark-learned-btn active' : 'mark-learned-btn';
         const btnText = isLearned ? '<i class="fa-solid fa-check"></i> Ya me la sé' : '<i class="fa-solid fa-star"></i> Marcar Estudiada';
@@ -290,7 +290,7 @@ function renderQuestions(questionsToRender) {
             <div class="learned-badge"><i class="fa-solid fa-check"></i></div>
             <div class="flashcard-header">
                 <span class="question-number">Pregunta ${qNum}</span>
-                <button class="speech-btn" title="Escuchar en voz alta" onclick="toggleAudio(this, ${qNum}, '${safeQ}', '${safeA}')">
+                <button class="speech-btn" title="Escuchar en voz alta" onclick="toggleAudio(this, ${qNum})">
                     <i class="fa-solid fa-volume-high"></i>
                 </button>
             </div>
@@ -339,7 +339,14 @@ function cleanForTTS(text) {
     return clean;
 }
 
-window.toggleAudio = function(btn, qNum, qText, aText) {
+window.toggleAudio = function(btn, qNum) {
+    // Buscar la pregunta en window_data (qNum es 1-based, así que el índice es qNum - 1)
+    const qObj = window_data[qNum - 1];
+    let qText = qObj.q;
+    if (!qText.startsWith('¿')) qText = '¿' + qText;
+    if (!qText.endsWith('?')) qText += '?';
+    const aText = qObj.a;
+
     if (isPlaying && currentPlayingBtn === btn) {
         stopAudio();
         playAllActive = false;
