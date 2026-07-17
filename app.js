@@ -1,3 +1,21 @@
+
+// --- CONFIGURACIÓN DE VELOCIDAD ---
+window.currentVoiceSpeed = parseFloat(localStorage.getItem('voiceSpeed')) || 1.0;
+window.updateVoiceSpeed = function() {
+    const select = document.getElementById('voiceSpeedSelect');
+    if(select) {
+        window.currentVoiceSpeed = parseFloat(select.value);
+        localStorage.setItem('voiceSpeed', select.value);
+    }
+};
+
+// Cargar velocidad guardada al inicio
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('voiceSpeedSelect');
+    if(select && localStorage.getItem('voiceSpeed')) {
+        select.value = localStorage.getItem('voiceSpeed');
+    }
+});
 // State variables
 let currentBlock = 0;
 const QUESTIONS_PER_BLOCK = 50;
