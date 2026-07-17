@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Preguntas - Ascenso 2026</title>
+
+    <!-- Open Graph / Redes Sociales (WhatsApp, Facebook, etc.) -->
+    <meta property="og:title" content="Banco de Preguntas - Ascenso 2026 🎓">
+    <meta property="og:description" content="¡Mucho éxito colega maestro! Este material gratuito contiene las 2500 preguntas resueltas para apoyarte en tu preparación para el Examen de Ascenso 2026. ¡A estudiar y conquistar nuestra meta! 📚✨">
+    <meta property="og:image" content="https://tu-dominio.com/instalar/share-icon.png"> <!-- Cambiar por la URL real cuando se suba a internet -->
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Banco de Preguntas - Ascenso 2026 🎓">
+    <meta name="twitter:description" content="¡Mucho éxito colega maestro! Este material gratuito contiene las 2500 preguntas resueltas para apoyarte en tu preparación para el Examen de Ascenso 2026.">
+    <meta name="twitter:image" content="https://tu-dominio.com/instalar/share-icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="images/logo.png" alt="EduConnectRuben Logo" class="logo-img">
+                <h2>Las 100 Secretas</h2>
+                <div class="welcome-message">
+                    <p>"El esfuerzo de hoy es el éxito de mañana. ¡Preparémonos juntos para conquistar nuestra meta colega maestro!"</p>
+                    <span class="signature">EduConnectRuben</span>
+                </div>
+                <div class="progress-container">
+                    <span id="learned-counter">Estudiadas: 0 / 2500</span>
+                </div>
+            </div>
+
+            <button id="simulacro-btn" class="simulacro-btn">
+                <i class="fa-solid fa-graduation-cap"></i> Simulacro Aleatorio
+            </button>
+
+            <div class="sidebar-menu" id="blocks-menu">
+                <!-- Blocks will be injected here -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <button id="mobile-menu-btn" class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="header-info">
+                    <h1 id="current-block-title">Preguntas 1 - 60</h1>
+                    <span class="badge" id="total-count-badge">Cargando...</span>
+                </div>
+                <div class="header-actions">
+                    <button id="toggle-theme" class="theme-btn" title="Cambiar Tema">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="toolbar">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="number" id="jump-to-input" placeholder="Ir a # (Ej: 1500)">
+                    <button id="jump-btn">Ir</button>
+                </div>
+                <button id="play-all-btn" class="play-all-btn">
+                    <i class="fa-solid fa-play"></i> Reproducir Todo
+                </button>
+            </div>
+
+            <div class="flashcards-container" id="flashcards-container">
+                <!-- Flashcards will be injected here -->
+            </div>
+
+            <!-- Pagination or loading info -->
+            <footer class="footer-info">
+                <div class="footer-msg">
+                    <h3>¡Rumbo a la Excelencia!</h3>
+                    <p>Diseñado con mucha dedicación para apoyar el estudio y preparación de todos los colegas del magisterio boliviano para el Examen de Ascenso 2026.</p>
+                    <span class="footer-signature">Con gran aprecio, <strong>EduConnectRuben</strong></span>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Data and App scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="instalar/pwa.js"></script>
+</body>
+</html>
