@@ -327,6 +327,18 @@ window.revealAnswer = function(btn) {
 window.toggleLearned = toggleLearned;
 
 // Text-to-Speech Functionality
+
+function cleanForTTS(text) {
+    if (!text) return "";
+    let clean = text.replace(/Art\./gi, "Artículo");
+    clean = clean.replace(/R\.M\./gi, "Resolución Ministerial");
+    clean = clean.replace(/D\.S\./gi, "Decreto Supremo");
+    clean = clean.replace(/N°/gi, "Número");
+    clean = clean.replace(/inc\./gi, "inciso");
+    clean = clean.replace(/etc\./gi, "etcétera.");
+    return clean;
+}
+
 window.toggleAudio = function(btn, qNum, qText, aText) {
     if (isPlaying && currentPlayingBtn === btn) {
         stopAudio();
@@ -357,7 +369,7 @@ window.toggleAudio = function(btn, qNum, qText, aText) {
         revealAnswer(revealBtn);
     }
 
-    const textToRead = `Pregunta ${qNum}. ${qText}... ... Respuesta. ${aText}`;
+    const textToRead = `Pregunta ${qNum}... ${cleanForTTS(qText)}... ... Respuesta... ${cleanForTTS(aText)}`;
     
     currentUtterance = new SpeechSynthesisUtterance(textToRead);
     currentUtterance.lang = 'es-ES';
